@@ -33,7 +33,6 @@ jobs:
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}"
  
- 
   deploydev:
     needs: build  
     runs-on: ubuntu-latest
@@ -54,6 +53,8 @@ jobs:
           -Danypoint.username="${{ secrets.USER }}" \
           -Danypoint.password="${{ secrets.PASS }}" \
           -Danypoint.businessGroup="${{ secrets.ORG_ID }}" \
-          -Denv="Sandbox" \
+          -Denv="dev" \
           -Dappname="cicd-pipelines" \
-          
+          -Danypoint.platform.client_id="${{ secrets.ENV_CLIENT_ID }}" \
+          -Danypoint.platform.client_secret="${{ secrets.ENV_CLIENT_SECRET }}" \
+
