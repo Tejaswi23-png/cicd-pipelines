@@ -29,7 +29,7 @@ jobs:
  
       - name: Publish to Exchange
         run: |
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests \
+          mvn deploy --settings .settings/settings.xml -DskipMunitTests \
           -Danypoint.username="8b71897a36fe4e5baffcb1731c9de294" \
           -Danypoint.password="23D98Ae8517B432E8c04A78cD7067413"
  
