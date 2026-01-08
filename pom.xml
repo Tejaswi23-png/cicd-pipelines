@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>2477c8aa-eb82-4bb1-9c02-f2b56e1d7245</groupId>
-	<artifactId>cicd-pipelines</artifactId>
-	<version>1.0.3</version>
+	<artifactId>cicd-pipeline</artifactId>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>cicd-pipelines</name>
