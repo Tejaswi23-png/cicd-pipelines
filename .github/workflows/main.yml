@@ -50,7 +50,7 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Deploy to dev
         run: |
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy \
+          mvn deploy --settings .settings/settings.xml -DskipMunitTests -DmuleDeploy \
           -Danypoint.username="8b71897a36fe4e5baffcb1731c9de294" \
           -Danypoint.password="23D98Ae8517B432E8c04A78cD7067413" \
           -Danypoint.businessGroup="2477c8aa-eb82-4bb1-9c02-f2b56e1d7245" \
